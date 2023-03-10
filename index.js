@@ -15,7 +15,7 @@ function installTailwind() {
             const tailwindConfigContent = fs.readFileSync(`${__dirname}/config.txt`);
             const globalCssContent = fs.readFileSync(`${__dirname}/global.txt`);
             fs.writeFileSync(`${process.cwd()}/tailwind.config.js`, tailwindConfigContent)
-            fs.writeFileSync(`${process.cwd()}/global.css`, globalCssContent, { flag: "w+" });
+            fs.writeFileSync(`${process.cwd()}/styles/globals.css`, globalCssContent, { flag: "w+" });
             console.log("Installation Done. Have Fun")
         })
 
